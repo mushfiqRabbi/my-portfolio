@@ -1,18 +1,23 @@
+import Heading from "./Heading";
+import BodyText from "./BodyText";
+
 export default function IntroSection() {
   return (
-    <section className="bg-[#457cfa] text-white pt-14 text-center px-7">
+    <section className="bg-[#457cfa] text-white px-6">
       <header>
-        <h2 className="font-bold text-[1.2rem] tracking-wide">
-          Hi, I'm Mushfiq. Nice to meet you.
+        <h2 className="mt-20 inline-block">
+          <Heading>Hi, I'm Mushfiq. Nice to meet you.</Heading>
         </h2>
       </header>
       <article>
-        <p className="text-lg  mt-5 tracking-wide">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut fuga
-          fugit quo cumque molestias, distinctio illo molestiae. Praesentium
-          ratione animi distinctio culpa hic cum sit quia molestias ex assumenda
-          minima possimus modi ea necessitatibus laborum, cupiditate voluptate?
-          Facere, in sapiente!
+        <p className="mt-6">
+          <BodyText>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut fuga
+            fugit quo cumque molestias, distinctio illo molestiae. Praesentium
+            ratione animi distinctio culpa hic cum sit quia molestias ex
+            assumenda minima possimus modi ea necessitatibus laborum, cupiditate
+            voluptate? Facere, in sapiente!
+          </BodyText>
         </p>
       </article>
     </section>
