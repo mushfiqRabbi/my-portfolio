@@ -16,16 +16,14 @@ export default function SkillCard({
       <header className="text-center">
         <FontAwesomeIcon
           icon={icon === "frontend" ? faCode : faTerminal}
-          className="bg-[#48c092] rounded-full h-8 w-8 p-4"
+          className="bg-[#4bc190] rounded-full h-8 w-8 p-4"
         />
         <Heading value={2} className={"mt-5"}>
           {headerText}
         </Heading>
       </header>
-      <BodyText value={2} className="mt-6">
-        {bodyText}
-      </BodyText>
-      <Heading value={3} className="mt-10 text-[#2b61e0]">
+      <BodyText value={2}>{bodyText}</BodyText>
+      <Heading value={3} className="mt-10 text-[#3362cc]">
         Languages I speak
       </Heading>
       <ul className="flex flex-wrap justify-center mt-2 gap-1">
@@ -39,7 +37,7 @@ export default function SkillCard({
           })}
         </BodyText>
       </ul>
-      <Heading value={3} className="mt-10 text-[#2b61e0]">
+      <Heading value={3} className="mt-10 text-[#3362cc]">
         Technologies I use
       </Heading>
       <ul className=" flex flex-col mt-2 gap-1">
@@ -49,7 +47,7 @@ export default function SkillCard({
           })}
         </BodyText>
       </ul>
-      <Heading value={3} className="mt-10 text-[#2b61e0]">
+      <Heading value={3} className="mt-10 text-[#3362cc]">
         Dev Tools:
       </Heading>
       <ul className=" flex flex-wrap justify-center mt-2 gap-1">
