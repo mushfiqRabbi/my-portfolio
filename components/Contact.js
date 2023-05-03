@@ -4,9 +4,7 @@ export default function Contact() {
   return (
     <section className="mt-20 px-6">
       <header>
-        <h2 className="">
-          <Heading>Get in touch</Heading>
-        </h2>
+        <Heading value={2}>Get in touch</Heading>
       </header>
     </section>
   );

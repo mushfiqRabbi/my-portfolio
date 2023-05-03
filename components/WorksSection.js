@@ -5,15 +5,11 @@ export default function WorksSection() {
   return (
     <section className="mt-20 px-6">
       <header>
-        <h2 className="font-bold">
-          <Heading>My Recent Work</Heading>
-        </h2>
-        <p className="mt-6">
-          <BodyText>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
-            consequatur deserunt recusandae saepe fuga velit.
-          </BodyText>
-        </p>
+        <Heading value={2}>My Recent Work</Heading>
+        <BodyText value={2} className="mt-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+          consequatur deserunt recusandae saepe fuga velit.
+        </BodyText>
       </header>
     </section>
   );
