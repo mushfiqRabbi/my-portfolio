@@ -4,7 +4,10 @@ import BodyText from "./BodyText";
 
 export default function LandingSection() {
   return (
-    <section className="mt-28 px-6 h-[82vh] bg-[url('/landing-bg.svg')] bg-no-repeat bg-origin-content bg-bottom">
+    <section
+      className="mt-28 px-6 h-[82vh] bg-[url('/landing-bg.svg')] bg-no-repeat bg-origin-content bg-bottom"
+      id="home"
+    >
       <header>
         <Heading value={1}>Frontend & Backend Web Developer</Heading>
         <BodyText value={1}>

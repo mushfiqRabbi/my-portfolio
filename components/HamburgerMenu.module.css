@@ -1,0 +1,48 @@
+.checkbox:checked + div > .div_one {
+  top: calc(50% - 1.5px);
+  transform: rotate(45deg);
+  background-color: lightcoral;
+  transition: top 0.25s, transform 0.25s 0.25s, background-color 0s 0.25s;
+}
+
+.checkbox:checked + div > .div_three {
+  bottom: calc(50% - 1.5px);
+  transform: rotate(-45deg);
+  background-color: lightcoral;
+  transition: bottom 0.25s, transform 0.25s 0.25s, background-color 0s 0.25s;
+}
+
+.checkbox:checked + div > .div_two {
+  opacity: 0;
+  transition: opacity 0s 0.25s;
+}
+
+.div_one {
+  transition: transform 0.25s, top 0.25s 0.25s, background-color 0.25s;
+}
+.div_two {
+  transition: opacity 0s 0.25s;
+}
+.div_three {
+  transition: transform 0.25s, bottom 0.25s 0.25s, background-color 0.25s;
+}
+
+.menu_container {
+  border-radius: 100% 0% 0% 100% / 0% 100% 0% 100%;
+  transition: height 0.5s cubic-bezier(0.5, 1.5, 0, 1),
+    width 0.5s cubic-bezier(0.5, 1.5, 0, 1);
+}
+
+label:has(.checkbox:checked) + .menu_container {
+  height: 330px;
+  width: 330px;
+}
+
+.nav_list {
+  opacity: 0;
+}
+
+label:has(.checkbox:checked) + .menu_container .nav_list {
+  opacity: 1;
+  transition: opacity 0.25s 0.25s;
+}

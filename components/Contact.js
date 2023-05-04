@@ -29,6 +29,7 @@ export default function Contact() {
       style={{
         backgroundImage: "linear-gradient(to bottom, white 80%, #407BFF 80% )",
       }}
+      id="contact"
     >
       <header>
         <Heading value={2}>Get in touch</Heading>

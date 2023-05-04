@@ -3,7 +3,7 @@ import BodyText from "./BodyText";
 
 export default function IntroSection() {
   return (
-    <section className="bg-[#407BFF] text-white px-6">
+    <section className="bg-[#407BFF] text-white px-6" id="skills">
       <header>
         <Heading value={2} className="pt-20">
           Hi, I'm Mushfiq. Nice to meet you.
