@@ -1,13 +1,17 @@
 export default function BodyText({ children, value, className }) {
   if (value === 1) {
     return (
-      <p className={"text-lg tracking wide text-center mt-6 " + className}>
+      <p
+        className={
+          "text-lg tracking wide text-center mt-6 md:px-36 " + className
+        }
+      >
         {children}
       </p>
     );
   } else if (value === 2) {
     return (
-      <p className={"tracking wide text-center mt-6 " + className}>
+      <p className={"text-center tracking-wide mt-6 " + className}>
         {children}
       </p>
     );

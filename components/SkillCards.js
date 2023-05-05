@@ -23,7 +23,7 @@ const cards = [
 
 export default function SkillCards() {
   return (
-    <div className="border rounded-xl bg-white drop-shadow-md">
+    <div className="border rounded-xl bg-white drop-shadow-md md:flex">
       <SkillCard data={cards[0]} />
       <SkillCard data={cards[1]} last={true} />
     </div>

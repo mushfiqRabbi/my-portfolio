@@ -11,8 +11,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function FooterSection() {
   return (
     <footer className=" bg-[#407BFF] py-20 text-white px-4" id="footer">
-      <Heading value={2}>Let's get social</Heading>
-      <BodyText value={2}>
+      <Heading value={2} className="md:text-[32px]">
+        Let's get social
+      </Heading>
+      <BodyText value={2} className="md:text-xl md:px-28">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
         recusandae.
       </BodyText>
@@ -50,7 +52,7 @@ export default function FooterSection() {
           </a>
         </li>
       </ul>
-      <p className="text-center font-light tracking-wide mb-4">
+      <p className="text-center font-light tracking-wide mb-4 md:text-[18px]">
         Handcrafted by me
         <span className="text-2xl font-extralight align-middle px-[2px]">
           &copy;

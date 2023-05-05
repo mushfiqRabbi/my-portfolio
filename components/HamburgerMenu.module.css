@@ -46,3 +46,10 @@ label:has(.checkbox:checked) + .menu_container .nav_list {
   opacity: 1;
   transition: opacity 0.25s 0.25s;
 }
+
+@media (min-width: 768px) {
+  label:has(.checkbox:checked) + .menu_container {
+    height: 500px;
+    width: 500px;
+  }
+}

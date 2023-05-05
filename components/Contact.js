@@ -25,26 +25,28 @@ export default function Contact() {
 
   return (
     <section
-      className="pt-20 px-6 mt-20 border-t"
+      className="pt-20 px-6"
       style={{
         backgroundImage: "linear-gradient(to bottom, white 80%, #407BFF 80% )",
       }}
       id="contact"
     >
       <header>
-        <Heading value={2}>Get in touch</Heading>
+        <Heading value={2} className="md:text-[32px]">
+          Get in touch
+        </Heading>
       </header>
-      <BodyText value={2}>
+      <BodyText value={2} className="md:text-xl md:px-28">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores,
         commodi?
       </BodyText>
-      <div className="px-5 rounded-xl bg-[#263238]  mt-14 flex flex-col items-center py-11 text-white">
+      <div className="px-5 rounded-xl bg-[#263238]  mt-14 flex flex-col items-center py-11 text-white md:w-3/4 mx-auto">
         <header className="text-center">
           <FontAwesomeIcon
             icon={faEnvelope}
             className="bg-[#4bc190] rounded-full h-8 w-8 p-4"
           ></FontAwesomeIcon>
-          <Heading value={2} className="mt-5">
+          <Heading value={2} className="mt-5 md:text-2xl">
             Send Email
           </Heading>
         </header>
@@ -84,7 +86,7 @@ export default function Contact() {
             <button
               type="submit"
               value="Send"
-              className="border border-[#4bc190] rounded-3xl w-fit mx-auto text-white px-8 py-2 uppercase font-medium tracking-widest mt-6 mb-2"
+              className="border border-[#4bc190] rounded-3xl w-fit mx-auto text-white px-8 py-2 uppercase font-medium tracking-widest mt-6 mb-2 md:text-[18px]"
             >
               send
             </button>

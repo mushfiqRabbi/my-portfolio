@@ -18,16 +18,18 @@ export default function SkillCard({
           icon={icon === "frontend" ? faCode : faTerminal}
           className="bg-[#4bc190] rounded-full h-8 w-8 p-4"
         />
-        <Heading value={2} className={"mt-5"}>
+        <Heading value={2} className="mt-5 md:text-2xl">
           {headerText}
         </Heading>
       </header>
-      <BodyText value={2}>{bodyText}</BodyText>
-      <Heading value={3} className="mt-10 text-[#3362cc]">
+      <BodyText value={2} className="md:text-[18px]">
+        {bodyText}
+      </BodyText>
+      <Heading value={3} className="mt-10 text-[#3362cc] md:text-[18px]">
         Languages I speak
       </Heading>
       <ul className="flex flex-wrap justify-center mt-2 gap-1">
-        <BodyText value={3}>
+        <BodyText value={3} className="md:text-[18px]">
           {langList.map((lang, index) => {
             return (
               <li key={index}>{`${lang}${
@@ -37,21 +39,21 @@ export default function SkillCard({
           })}
         </BodyText>
       </ul>
-      <Heading value={3} className="mt-10 text-[#3362cc]">
+      <Heading value={3} className="mt-10 text-[#3362cc] md:text-[18px]">
         Technologies I use
       </Heading>
       <ul className=" flex flex-col mt-2 gap-1">
-        <BodyText value={3}>
+        <BodyText value={3} className="md:text-[18px]">
           {techList.map((tech, index) => {
             return <li key={index}>{`${tech}`}</li>;
           })}
         </BodyText>
       </ul>
-      <Heading value={3} className="mt-10 text-[#3362cc]">
+      <Heading value={3} className="mt-10 text-[#3362cc] md:text-[18px]">
         Dev Tools:
       </Heading>
       <ul className=" flex flex-wrap justify-center mt-2 gap-1">
-        <BodyText value={3}>
+        <BodyText value={3} className="md:text-[18px]">
           {devTools.map((dt, index) => {
             return (
               <li key={index}>{`${dt}${
