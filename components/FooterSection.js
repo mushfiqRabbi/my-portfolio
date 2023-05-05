@@ -16,62 +16,58 @@ export default function FooterSection() {
     >
       <Heading
         value={2}
-        className="md:text-[32px] lg:absolute lg:bg-[#263238] lg:top-0 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/4 lg:py-8 lg:w-1/4 lg:rounded-xl"
+        className="md:text-[32px] lg:absolute lg:bg-[#263238] lg:top-0 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/4 lg:py-8 lg:w-1/4 lg:rounded-xl lg:text-slate-200 text-slate-100"
       >
         Let's get social
       </Heading>
       <BodyText
         value={2}
-        className="md:text-xl md:px-28  lg:container lg:max-w-5xl mx-auto"
+        className="md:text-xl md:px-28  lg:container lg:max-w-5xl mx-auto text-slate-200"
       >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
         recusandae.
       </BodyText>
       <ul className="flex w-fit gap-3 mx-auto my-10  lg:container lg:max-w-5xl justify-center">
-        <li>
+        <li className="group">
           <a href="#">
             <FontAwesomeIcon
               icon={faFacebookF}
-              className="h-5 w-5 p-3 rounded-full border border-slate-300 inline-block"
+              className="h-5 w-5 p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-300 group-hover:text-slate-700 transition-colors ease-in-out duration-300"
             />
           </a>
         </li>
-        <li>
+        <li className="group">
           <a href="#">
             <FontAwesomeIcon
               icon={faWhatsapp}
-              className="h-5 w-5 p-3 rounded-full border border-slate-300 inline-block"
+              className="h-5 w-5 p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-300 group-hover:text-slate-700 transition-colors ease-in-out duration-300"
             />
           </a>
         </li>
-        <li>
+        <li className="group">
           <a href="#">
             <FontAwesomeIcon
               icon={faLinkedinIn}
-              className="h-5 w-5 p-3 rounded-full border border-slate-300 inline-block"
+              className="h-5 w-5 p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-300 group-hover:text-slate-700 transition-colors ease-in-out duration-300"
             />
           </a>
         </li>
-        <li>
+        <li className="group">
           <a href="#">
             <FontAwesomeIcon
               icon={faGithub}
-              className="h-5 w-5 p-3 rounded-full border border-slate-300 inline-block"
+              className="h-5 w-5 p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-300 group-hover:text-slate-700 transition-colors ease-in-out duration-300"
             />
           </a>
         </li>
       </ul>
-      <p className="text-center font-light tracking-wide mb-4 md:text-[18px] lg:container lg:max-w-5xl mx-auto">
-        Handcrafted by me
-        <span className="text-2xl font-extralight align-middle px-[2px]">
+      <p className="text-center tracking-wide mb-4 md:text-[18px] lg:container lg:max-w-5xl mx-auto text-slate-100 font-extralight">
+        Developed by me
+        <span className="text-2xl font-extralight align-middle pl-1">
           &copy;
         </span>
         mushfiqurRahman
       </p>
-      <div className="flex items-center gap-2 w-fit mx-auto lg:container lg:max-w-5xl justify-center">
-        <p className="text-[10px] tracking-wider font-light">Created using</p>
-        <Image src="/Nextjs-logo.svg" height={70} width={90} />
-      </div>
     </footer>
   );
 }

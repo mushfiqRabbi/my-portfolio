@@ -1,15 +1,13 @@
 .checkbox:checked + div > .div_one {
   top: calc(50% - 1.5px);
   transform: rotate(45deg);
-  background-color: lightcoral;
-  transition: top 0.25s, transform 0.25s 0.25s, background-color 0s 0.25s;
+  transition: top 0.25s, transform 0.25s 0.25s;
 }
 
 .checkbox:checked + div > .div_three {
   bottom: calc(50% - 1.5px);
   transform: rotate(-45deg);
-  background-color: lightcoral;
-  transition: bottom 0.25s, transform 0.25s 0.25s, background-color 0s 0.25s;
+  transition: bottom 0.25s, transform 0.25s 0.25s;
 }
 
 .checkbox:checked + div > .div_two {
@@ -18,13 +16,13 @@
 }
 
 .div_one {
-  transition: transform 0.25s, top 0.25s 0.25s, background-color 0.25s;
+  transition: transform 0.25s, top 0.25s 0.25s;
 }
 .div_two {
   transition: opacity 0s 0.25s;
 }
 .div_three {
-  transition: transform 0.25s, bottom 0.25s 0.25s, background-color 0.25s;
+  transition: transform 0.25s, bottom 0.25s 0.25s;
 }
 
 .menu_container {
@@ -57,6 +55,8 @@ label:has(.checkbox:checked) + .menu_container .nav_list {
 @media (min-width: 1024px) {
   .menu_container {
     border-radius: 0;
+    transition: none;
+    border-bottom: 1px solid lightgray;
   }
   .nav_list {
     opacity: 1;

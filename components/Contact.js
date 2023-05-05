@@ -27,22 +27,22 @@ export default function Contact() {
   return (
     <section className="pt-20 px-6 lg:container mx-auto" id="contact">
       <header>
-        <Heading value={2} className="md:text-[32px]">
+        <Heading value={2} className="md:text-[32px] text-slate-700">
           Get in touch
         </Heading>
       </header>
-      <BodyText value={2} className="md:text-xl md:px-28">
+      <BodyText value={2} className="md:text-xl md:px-28 text-slate-600">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores,
         commodi?
       </BodyText>
       <div className=" lg:flex lg:justify-evenly lg:p-20 xl:ml-28 lg:gap-8 lg:pr-8">
-        <div className="px-7 rounded-xl bg-[#263238]  mt-14 flex flex-col items-center py-11 text-white md:w-3/4 mx-auto lg:m-0 lg:max-w-md">
+        <div className="px-7 rounded-xl bg-[#263238]  mt-14 flex flex-col items-center py-11 text-slate-100 md:w-3/4 mx-auto lg:m-0 lg:max-w-md">
           <header className="text-center">
             <FontAwesomeIcon
               icon={faEnvelope}
-              className="bg-[#4bc190] rounded-full h-8 w-8 p-4"
+              className="bg-[#4bc190] rounded-full h-8 w-8 p-4 text-slate-700"
             ></FontAwesomeIcon>
-            <Heading value={2} className="mt-5 md:text-2xl">
+            <Heading value={2} className="mt-5 md:text-2xl text-slate-200">
               Send Email
             </Heading>
           </header>
@@ -82,7 +82,7 @@ export default function Contact() {
               <button
                 type="submit"
                 value="Send"
-                className="border border-[#4bc190] rounded-3xl w-fit mx-auto text-white px-8 py-2 uppercase font-medium tracking-widest mt-6 mb-2 md:text-[18px]"
+                className="border border-[#4bc190] rounded-3xl w-fit mx-auto text-slate-300 px-8 py-2 uppercase tracking-widest mt-6 mb-2 md:text-[18px] hover:bg-[#4bc190] transition-colors duration-300 ease-in-out hover:text-slate-700 font-bold"
               >
                 send
               </button>

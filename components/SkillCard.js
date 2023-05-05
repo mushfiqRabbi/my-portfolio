@@ -9,7 +9,7 @@ export default function SkillCard({
 }) {
   return (
     <article
-      className={`flex flex-col items-center py-11 px-10 ${
+      className={`flex flex-col items-center py-11 px-12 ${
         !last && "border-b md:border-b-0 md:border-r"
       } `}
     >
@@ -18,20 +18,23 @@ export default function SkillCard({
           icon={icon === "frontend" ? faCode : faTerminal}
           className="bg-[#4bc190] rounded-full h-8 w-8 p-4"
         />
-        <Heading value={2} className="mt-5 md:text-2xl">
+        <Heading value={2} className="mt-5 md:text-2xl text-slate-700">
           {headerText}
         </Heading>
       </header>
-      <BodyText value={2} className="md:text-[18px]">
+      <BodyText value={2} className="md:text-[18px] text-slate-500">
         {bodyText}
       </BodyText>
-      <Heading value={3} className="mt-10 text-[#3362cc] md:text-[18px]">
+      <Heading
+        value={3}
+        className="mt-10 text-[#3362cc] md:text-[18px] font-semibold"
+      >
         Languages I speak
       </Heading>
       <ul className="flex flex-wrap justify-center mt-2 gap-1">
         <BodyText
           value={3}
-          className="md:text-[18px] flex flex-wrap justify-center mt-2 gap-1"
+          className="md:text-[18px] flex flex-wrap justify-center mt-2 gap-1 text-slate-700"
         >
           {langList.map((lang, index) => {
             return (
@@ -42,23 +45,29 @@ export default function SkillCard({
           })}
         </BodyText>
       </ul>
-      <Heading value={3} className="mt-10 text-[#3362cc] md:text-[18px]">
+      <Heading
+        value={3}
+        className="mt-10 text-[#3362cc] md:text-[18px] font-semibold"
+      >
         Technologies I use
       </Heading>
       <ul className=" flex flex-col mt-2 gap-1">
-        <BodyText value={3} className="md:text-[18px]">
+        <BodyText value={3} className="md:text-[18px] text-slate-700">
           {techList.map((tech, index) => {
             return <li key={index}>{`${tech}`}</li>;
           })}
         </BodyText>
       </ul>
-      <Heading value={3} className="mt-10 text-[#3362cc] md:text-[18px]">
+      <Heading
+        value={3}
+        className="mt-10 text-[#3362cc] md:text-[18px] font-semibold"
+      >
         Dev Tools:
       </Heading>
       <ul className=" flex flex-wrap justify-center mt-2 gap-1">
         <BodyText
           value={3}
-          className="md:text-[18px] flex flex-wrap justify-center mt-2 gap-1"
+          className="md:text-[18px] flex flex-wrap justify-center mt-2 gap-1 text-slate-700"
         >
           {devTools.map((dt, index) => {
             return (

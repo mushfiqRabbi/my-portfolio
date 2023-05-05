@@ -5,14 +5,17 @@ import BodyText from "./BodyText";
 export default function LandingSection() {
   return (
     <section
-      className="pt-32 lg:pt-24 md:pt-40 px-6 lg:container mx-auto"
+      className="pt-36 lg:pt-24 md:pt-40 px-6 lg:container mx-auto"
       id="home"
     >
       <header>
-        <Heading value={1} className="md:text-[40px] lg:text-5xl">
-          Frontend & Backend Web Developer
+        <Heading
+          value={1}
+          className="md:text-[40px] lg:text-5xl text-slate-700"
+        >
+          Frontend & Backend <pre className="md:hidden"></pre> Web Developer
         </Heading>
-        <BodyText value={1} className="md:text-2xl">
+        <BodyText value={1} className="md:text-2xl text-slate-600">
           I code frontend and backend web applications, and I love what I do.
         </BodyText>
       </header>

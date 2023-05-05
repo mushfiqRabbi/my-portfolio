@@ -8,12 +8,15 @@ export default function IntroSection() {
       id="skills"
     >
       <header className="lg:container mx-auto lg:max-w-6xl">
-        <Heading value={2} className=" md:text-[32px]">
+        <Heading value={2} className=" md:text-[32px] text-slate-100">
           Hi, I'm Mushfiq. Nice to meet you.
         </Heading>
       </header>
       <article className="lg:container mx-auto lg:max-w-6xl">
-        <BodyText value={2} className="md:px-28 md:text-xl">
+        <BodyText
+          value={2}
+          className="md:px-28 md:text-xl text-slate-200 lg:mt-8"
+        >
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut fuga
           fugit quo cumque molestias, distinctio illo molestiae. Praesentium
           ratione animi distinctio culpa hic cum sit quia molestias ex assumenda
