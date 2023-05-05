@@ -4,9 +4,12 @@ import BodyText from "./BodyText";
 
 export default function LandingSection() {
   return (
-    <section className="pt-32 md:pt-40 px-6" id="home">
+    <section
+      className="pt-32 lg:pt-24 md:pt-40 px-6 lg:container mx-auto"
+      id="home"
+    >
       <header>
-        <Heading value={1} className="md:text-[40px]">
+        <Heading value={1} className="md:text-[40px] lg:text-5xl">
           Frontend & Backend Web Developer
         </Heading>
         <BodyText value={1} className="md:text-2xl">
@@ -18,7 +21,7 @@ export default function LandingSection() {
           src="/avatar-male.svg"
           width={180}
           height={180}
-          className="mx-auto my-20 md:w-1/3"
+          className="mx-auto my-20 md:w-1/3 lg:max-w-[210px] lg:my-14"
           alt="Male avatar illustration"
         />
       </figure>
@@ -28,7 +31,7 @@ export default function LandingSection() {
           height={512}
           width={512}
           alt="web developer illustration"
-          className="mx-auto md:w-4/5"
+          className="mx-auto md:w-4/5 lg:max-w-3xl"
         />
       </figure>
     </section>

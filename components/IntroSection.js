@@ -3,13 +3,16 @@ import BodyText from "./BodyText";
 
 export default function IntroSection() {
   return (
-    <section className="bg-[#407BFF] text-white px-6" id="skills">
-      <header>
-        <Heading value={2} className="pt-20 md:text-[32px]">
+    <section
+      className="bg-[#407BFF] text-white px-6 lg:pt-36 pt-20"
+      id="skills"
+    >
+      <header className="lg:container mx-auto lg:max-w-6xl">
+        <Heading value={2} className=" md:text-[32px]">
           Hi, I'm Mushfiq. Nice to meet you.
         </Heading>
       </header>
-      <article>
+      <article className="lg:container mx-auto lg:max-w-6xl">
         <BodyText value={2} className="md:px-28 md:text-xl">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut fuga
           fugit quo cumque molestias, distinctio illo molestiae. Praesentium

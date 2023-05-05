@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function WorkCard() {
   return (
-    <div className="w-full h-auto rounded-xl overflow-hidden relative group">
+    <div className="w-full h-auto rounded-2xl overflow-hidden relative group">
       <div className="h-full w-full bg-[#263238] px-6 py-9 text-center text-white flex flex-col justify-evenly gap-4 absolute z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae,

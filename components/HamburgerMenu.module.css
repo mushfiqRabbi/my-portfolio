@@ -53,3 +53,12 @@ label:has(.checkbox:checked) + .menu_container .nav_list {
     width: 500px;
   }
 }
+
+@media (min-width: 1024px) {
+  .menu_container {
+    border-radius: 0;
+  }
+  .nav_list {
+    opacity: 1;
+  }
+}

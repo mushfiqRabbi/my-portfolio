@@ -9,8 +9,8 @@ export default function SkillCard({
 }) {
   return (
     <article
-      className={`flex flex-col items-center py-11 px-6 ${
-        !last && "border-b"
+      className={`flex flex-col items-center py-11 px-10 ${
+        !last && "border-b md:border-b-0 md:border-r"
       } `}
     >
       <header className="text-center">
@@ -29,7 +29,10 @@ export default function SkillCard({
         Languages I speak
       </Heading>
       <ul className="flex flex-wrap justify-center mt-2 gap-1">
-        <BodyText value={3} className="md:text-[18px]">
+        <BodyText
+          value={3}
+          className="md:text-[18px] flex flex-wrap justify-center mt-2 gap-1"
+        >
           {langList.map((lang, index) => {
             return (
               <li key={index}>{`${lang}${
@@ -53,7 +56,10 @@ export default function SkillCard({
         Dev Tools:
       </Heading>
       <ul className=" flex flex-wrap justify-center mt-2 gap-1">
-        <BodyText value={3} className="md:text-[18px]">
+        <BodyText
+          value={3}
+          className="md:text-[18px] flex flex-wrap justify-center mt-2 gap-1"
+        >
           {devTools.map((dt, index) => {
             return (
               <li key={index}>{`${dt}${
