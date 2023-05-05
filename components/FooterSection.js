@@ -32,7 +32,7 @@ export default function FooterSection() {
           <a href="#">
             <FontAwesomeIcon
               icon={faFacebookF}
-              className="h-5 w-5 p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-300 group-hover:text-slate-700 transition-colors ease-in-out duration-300"
+              className="h-5 w-5 p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-100 group-hover:text-[#407BFF] transition-colors ease-in-out duration-300"
             />
           </a>
         </li>
@@ -40,7 +40,7 @@ export default function FooterSection() {
           <a href="#">
             <FontAwesomeIcon
               icon={faWhatsapp}
-              className="h-5 w-5 p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-300 group-hover:text-slate-700 transition-colors ease-in-out duration-300"
+              className="h-5 w-5 p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-100 group-hover:text-[#407BFF] transition-colors ease-in-out duration-300"
             />
           </a>
         </li>
@@ -48,7 +48,7 @@ export default function FooterSection() {
           <a href="#">
             <FontAwesomeIcon
               icon={faLinkedinIn}
-              className="h-5 w-5 p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-300 group-hover:text-slate-700 transition-colors ease-in-out duration-300"
+              className="h-5 w-5 p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-100 group-hover:text-[#407BFF] transition-colors ease-in-out duration-300"
             />
           </a>
         </li>
@@ -56,7 +56,7 @@ export default function FooterSection() {
           <a href="#">
             <FontAwesomeIcon
               icon={faGithub}
-              className="h-5 w-5 p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-300 group-hover:text-slate-700 transition-colors ease-in-out duration-300"
+              className="h-5 w-5 p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-100 group-hover:text-[#407BFF] transition-colors ease-in-out duration-300"
             />
           </a>
         </li>
@@ -68,6 +68,14 @@ export default function FooterSection() {
         </span>
         mushfiqurRahman
       </p>
+      <ul className="text-center text-slate-300 text-xs mt-6">
+        <p>Resource credits</p>
+        <li>Resource credit one</li>
+        <li>Resource credit two</li>
+        <li>Resource credit three</li>
+        <li>Resource credit four</li>
+        <li>Resource credit five</li>
+      </ul>
     </footer>
   );
 }

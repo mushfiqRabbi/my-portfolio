@@ -21,7 +21,7 @@ export default function HamburgerMenu() {
         </div>
       </label>
       <div
-        className={`lg:mx-auto  lg:mt-14 lg:bg-white lg:sticky lg:h-auto lg:border-none lg:w-full fixed h-0 w-0 bg-[#407BFF] right-0 top-0 z-40 border-l overflow-hidden  ${styles.menu_container}`}
+        className={`lg:mx-auto  lg:mt-8 lg:bg-white lg:sticky lg:h-auto lg:border-none lg:w-full fixed h-0 w-0 bg-[#407BFF] right-0 top-0 z-40 border-l overflow-hidden  ${styles.menu_container}`}
       >
         <nav className="lg:static lg:-translate-x-0 absolute top-20 md:top-28 left-1/2 -translate-x-1/3 lg:max-w-4xl xl:max-w-6xl mx-auto">
           <ul

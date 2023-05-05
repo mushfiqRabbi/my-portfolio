@@ -16,7 +16,7 @@ export default function SkillCard({
       <header className="text-center">
         <FontAwesomeIcon
           icon={icon === "frontend" ? faCode : faTerminal}
-          className="bg-[#4bc190] rounded-full h-8 w-8 p-4"
+          className="bg-[#4bc190] rounded-full h-8 w-8 p-4 text-slate-700"
         />
         <Heading value={2} className="mt-5 md:text-2xl text-slate-700">
           {headerText}
