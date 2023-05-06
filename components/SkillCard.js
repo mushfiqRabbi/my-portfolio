@@ -22,7 +22,7 @@ export default function SkillCard({
           {headerText}
         </Heading>
       </header>
-      <BodyText value={2} className="text-slate-500">
+      <BodyText value={2} className="text-slate-500 mt-6 ">
         {bodyText}
       </BodyText>
       <Heading value={3} className="mt-10 text-[#3362cc] font-semibold">
@@ -30,7 +30,7 @@ export default function SkillCard({
       </Heading>
       <ul className="flex flex-wrap justify-center mt-2 gap-1">
         <BodyText
-          value={2}
+          value={3}
           className="flex flex-wrap justify-center mt-2 gap-1 text-slate-700"
         >
           {langList.map((lang, index) => {
@@ -46,7 +46,7 @@ export default function SkillCard({
         Technologies I use
       </Heading>
       <ul className=" flex flex-col mt-2 gap-1">
-        <BodyText value={3} className="md:text-[18px] text-slate-700">
+        <BodyText value={4} className="md:text-[18px] text-slate-700">
           {techList.map((tech, index) => {
             return <li key={index}>{`${tech}`}</li>;
           })}

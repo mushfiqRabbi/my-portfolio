@@ -16,7 +16,7 @@ export default function FooterSection() {
       </Heading>
       <BodyText
         value={1}
-        className="md:text-xl md:px-28  lg:container lg:max-w-5xl mx-auto text-slate-200"
+        className="md:text-xl md:px-28  lg:container lg:max-w-5xl mx-auto text-slate-200 mt-6"
       >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
         recusandae.

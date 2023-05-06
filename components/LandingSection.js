@@ -15,7 +15,7 @@ export default function LandingSection() {
         >
           Frontend & Backend <pre className="md:hidden"></pre> Web Developer
         </Heading>
-        <BodyText value={1} className="md:text-2xl text-slate-600">
+        <BodyText value={1} className="md:text-2xl text-slate-600 mt-6">
           I code frontend and backend web applications, and I love what I do.
         </BodyText>
       </header>

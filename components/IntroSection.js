@@ -15,7 +15,7 @@ export default function IntroSection() {
       <article className="lg:container mx-auto lg:max-w-5xl">
         <BodyText
           value={1}
-          className="md:px-28 md:text-xl text-slate-200 lg:mt-8 lg:text-xl"
+          className="md:px-28 md:text-xl text-slate-200 lg:mt-8 lg:text-xl mt-6"
         >
           I am a full-stack web developer with a degree in computer science. I
           specialize in using MongoDB, Express.js, React.js, and Node.js to

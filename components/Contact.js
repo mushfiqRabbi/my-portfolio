@@ -34,11 +34,11 @@ export default function Contact() {
           Get in touch
         </Heading>
       </header>
-      <BodyText value={1} className="md:text-xl md:px-28 text-slate-600">
+      <BodyText value={1} className="md:text-xl md:px-28 text-slate-600 mt-6 ">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores,
         commodi?
       </BodyText>
-      <div className=" lg:flex lg:justify-evenly md:p-20 xl:ml-28 lg:gap-8 lg:pr-8 items-center">
+      <div className=" lg:flex lg:justify-center md:p-20 xl:ml-24 lg:gap-24 items-center">
         <div className="px-7 md:max-w-md rounded-xl bg-[#263238]  mt-14 md:mt-0 flex flex-col items-center py-11 text-slate-100 max-w-md md:w-3/4 mx-auto lg:m-0 lg:max-w-md drop-shadow-md">
           <header className="text-center">
             <FontAwesomeIcon

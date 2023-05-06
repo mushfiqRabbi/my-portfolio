@@ -12,7 +12,7 @@ export default function WorksSection() {
       </header>
       <BodyText
         value={1}
-        className="md:text-xl md:px-28 lg:max-w-6xl mx-auto text-slate-600"
+        className="md:text-xl md:px-28 lg:max-w-6xl mx-auto text-slate-600 mt-6 "
       >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
         consequatur deserunt recusandae saepe fuga velit.
