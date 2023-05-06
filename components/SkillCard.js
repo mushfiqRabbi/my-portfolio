@@ -9,7 +9,7 @@ export default function SkillCard({
 }) {
   return (
     <article
-      className={`flex flex-col items-center py-11 px-12 ${
+      className={`flex-1 flex flex-col items-center py-11 px-12 ${
         !last && "border-b md:border-b-0 md:border-r"
       } `}
     >

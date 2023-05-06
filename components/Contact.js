@@ -26,7 +26,7 @@ export default function Contact() {
 
   return (
     <section
-      className="pt-20 px-6  mx-auto bg-gradient-to-b from-white from-80% via-[#407BFF] via-80% to-[#407BFF]"
+      className="py-20 lg:pt-28 px-6  mx-auto bg-gradient-to-b from-white from-80% via-[#407BFF] via-80% to-[#407BFF] border-t"
       id="contact"
     >
       <header>
@@ -34,12 +34,15 @@ export default function Contact() {
           Get in touch
         </Heading>
       </header>
-      <BodyText value={1} className="md:text-xl md:px-28 text-slate-600 mt-6 ">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores,
-        commodi?
+      <BodyText
+        value={1}
+        className="md:text-xl md:px-28 text-slate-600 mt-6 lg:max-w-6xl mx-auto"
+      >
+        Contact me directly via email to hire me or discuss your project or
+        collaboration. Let's work together to build something great.
       </BodyText>
-      <div className=" lg:flex lg:justify-center md:p-20 xl:ml-24 lg:gap-24 items-center">
-        <div className="px-7 md:max-w-md rounded-xl bg-[#263238]  mt-14 md:mt-0 flex flex-col items-center py-11 text-slate-100 max-w-md md:w-3/4 mx-auto lg:m-0 lg:max-w-md drop-shadow-md">
+      <div className=" lg:flex lg:justify-center md:px-20 md:pt-20 xl:ml-24 lg:gap-10 xl:gap-24 items-center">
+        <div className="px-7 rounded-xl bg-[#263238]  mt-14 md:mt-0 flex flex-col items-center py-11 text-slate-100 mx-auto lg:m-0 drop-shadow-md max-w-md lg:min-w-[28rem]">
           <header className="text-center">
             <FontAwesomeIcon
               icon={faEnvelope}
@@ -96,7 +99,7 @@ export default function Contact() {
           src="/email-me.svg"
           height={512}
           width={512}
-          className="hidden lg:block lg:w-[400px] xl:w-[512px]"
+          className="hidden lg:block lg:min-w-0"
         />
       </div>
     </section>

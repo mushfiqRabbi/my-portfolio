@@ -4,7 +4,7 @@ import BodyText from "./BodyText";
 export default function IntroSection() {
   return (
     <section
-      className="bg-[#407BFF] text-white px-6 lg:pt-36 pt-20"
+      className="bg-[#407BFF] text-white px-6 lg:pt-28 pt-20"
       id="skills"
     >
       <header className="lg:container mx-auto lg:max-w-6xl">
@@ -17,14 +17,12 @@ export default function IntroSection() {
           value={1}
           className="md:px-28 md:text-xl text-slate-200 lg:mt-8 lg:text-xl mt-6"
         >
-          I am a full-stack web developer with a degree in computer science. I
-          specialize in using MongoDB, Express.js, React.js, and Node.js to
-          create scalable and efficient full-stack applications. I have a
-          passion for creating visually appealing and dynamic user interfaces
-          using React.js. With my knowledge of back-end development using
-          Node.js and Express.js, I can build robust server-side logic and APIs.
-          I am constantly learning and keeping up-to-date with the latest trends
-          in web development.
+          I am a full-stack web developer with a background in computer science.
+          I have a passion for creating visually appealing and dynamic user
+          interfaces using React. With my knowledge of back-end development
+          using Node.js and Express.js, I can build robust server-side logic and
+          APIs. I am constantly learning and keeping up-to-date with the latest
+          trends in web development.
         </BodyText>
       </article>
     </section>
