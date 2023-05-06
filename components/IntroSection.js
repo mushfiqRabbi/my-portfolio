@@ -9,12 +9,12 @@ export default function IntroSection() {
     >
       <header className="lg:container mx-auto lg:max-w-6xl">
         <Heading value={2} className=" md:text-[32px] text-slate-100">
-          Hi, I'm Mushfiq. Nice to meet you.
+          Hi, I'm Mushfiq.<pre className="md:hidden"></pre> Nice to meet you.
         </Heading>
       </header>
       <article className="lg:container mx-auto lg:max-w-5xl">
         <BodyText
-          value={2}
+          value={1}
           className="md:px-28 md:text-xl text-slate-200 lg:mt-8 lg:text-xl"
         >
           I am a full-stack web developer with a degree in computer science. I

@@ -5,7 +5,7 @@ import BodyText from "./BodyText";
 export default function LandingSection() {
   return (
     <section
-      className="pt-36 lg:pt-24 md:pt-40 px-6 lg:container mx-auto"
+      className="pt-36 lg:pt-24 md:pt-40 lg:container mx-auto px-6"
       id="home"
     >
       <header>
@@ -24,7 +24,7 @@ export default function LandingSection() {
           src="/avatar-male.svg"
           width={180}
           height={180}
-          className="mx-auto my-20 md:w-1/3 lg:max-w-[210px] lg:my-14"
+          className="mx-auto my-20 md:w-[210px] lg:my-14"
           alt="Male avatar illustration"
         />
       </figure>

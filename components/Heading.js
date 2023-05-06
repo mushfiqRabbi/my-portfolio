@@ -1,13 +1,13 @@
 export default function Heading({ children, value, className }) {
   if (value === 1) {
     return (
-      <h1 className={"text-3xl font-bold text-center " + className}>
+      <h1 className={"text-[2rem] font-bold text-center " + className}>
         {children}
       </h1>
     );
   } else if (value === 2) {
     return (
-      <h2 className={"text-xl font-bold text-center " + className}>
+      <h2 className={"text-2xl font-bold text-center " + className}>
         {children}
       </h2>
     );
