@@ -60,7 +60,7 @@ export default function FooterSection() {
         <span className="text-2xl font-extralight align-middle pl-1">
           &copy;
         </span>
-        mushfiqurRahman
+        mushfiqur_Rahman
       </p>
       <p className="text-sm text-slate-200 text-center mt-6">
         Resource Credits

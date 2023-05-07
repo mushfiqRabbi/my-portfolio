@@ -30,8 +30,8 @@ export default function Contact() {
       id="contact"
     >
       <header>
-        <Heading value={2} className="md:text-[32px] text-slate-700">
-          Get in touch
+        <Heading value={2} className="md:text-[32px] text-slate-700 capitalize">
+          get in touch
         </Heading>
       </header>
       <BodyText
