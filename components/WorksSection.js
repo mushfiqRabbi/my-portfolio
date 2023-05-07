@@ -1,6 +1,8 @@
 import Heading from "./Heading";
 import BodyText from "./BodyText";
 import WorkCards from "./WorkCards";
+import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function WorksSection() {
   return (
@@ -24,9 +26,14 @@ export default function WorksSection() {
       >
         <div className="border-b border-transparent group-hover:border-[#3362cc]">
           <a href="#">
-            <p className="px-2 relative top-1 group-hover:-top-[2px] transition-[top] duration-100 ease-in-out -z-10 group-hover:z-10">
-              View more on github &rarr;
-            </p>
+            <div className="flex items-center relative top-1 group-hover:-top-[2px] transition-[top] duration-100 ease-in-out -z-10 group-hover:z-10">
+              <p className="px-2 ">View more on github</p>
+              <FontAwesomeIcon
+                icon={faArrowRightLong}
+                shake
+                className="mt-px w-6"
+              />
+            </div>
           </a>
         </div>
       </Heading>

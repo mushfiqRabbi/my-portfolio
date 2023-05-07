@@ -21,8 +21,8 @@ export default function FooterSection() {
         Find me on social media to discuss your project. Let's connect and
         collaborate!
       </BodyText>
-      <ul className="flex w-fit gap-3 mx-auto my-10  lg:container lg:max-w-5xl justify-center">
-        <li className="group">
+      <ul className="flex w-fit gap-3 lg:gap-4 mx-auto my-10  lg:container lg:max-w-5xl justify-center">
+        <li className="group active:animate-ping">
           <a href="#">
             <FontAwesomeIcon
               icon={faFacebookF}
@@ -30,15 +30,7 @@ export default function FooterSection() {
             />
           </a>
         </li>
-        <li className="group">
-          <a href="#">
-            <FontAwesomeIcon
-              icon={faWhatsapp}
-              className="h-5 w-5 p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-100 group-hover:text-[#407BFF] transition-colors ease-in-out duration-300"
-            />
-          </a>
-        </li>
-        <li className="group">
+        <li className="group active:animate-ping">
           <a href="#">
             <FontAwesomeIcon
               icon={faLinkedinIn}
@@ -46,7 +38,7 @@ export default function FooterSection() {
             />
           </a>
         </li>
-        <li className="group">
+        <li className="group active:animate-ping">
           <a href="#">
             <FontAwesomeIcon
               icon={faGithub}

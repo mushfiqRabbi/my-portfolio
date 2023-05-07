@@ -1,15 +1,21 @@
 import "@/styles/globals.css";
-// import { Inter, Reem_Kufi, Comme, Ysabeau } from "next/font/google";
-
-// const inter = Inter({ subsets: ["latin"] });
-// const reemKufi = Reem_Kufi({ subsets: ["latin"] });
-// const comme = Comme({ subsets: ["latin"] });
-// const ysabeau = Ysabeau({ subsets: ["latin"] });
+import Head from "next/head";
 
 export default function App({ Component, pageProps }) {
   return (
-    <main>
-      <Component {...pageProps} />
-    </main>
+    <>
+      <Head>
+        {/* <link
+          type="image/png"
+          sizes="96x96"
+          rel="icon"
+          href="/icons8-portfolio-96.png"
+        /> */}
+        <title>Portfolio | Mushfiqur Rahman</title>
+      </Head>
+      <main>
+        <Component {...pageProps} />
+      </main>
+    </>
   );
 }

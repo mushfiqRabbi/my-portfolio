@@ -1,16 +1,24 @@
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faSpinner,
+  faCircleCheck,
+  faCircleXmark,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import BodyText from "./BodyText";
 import Heading from "./Heading";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Contact() {
   const form = useRef(null);
+  const [message, setMessage] = useState("");
 
   async function handleSubmit(e) {
     e.preventDefault();
+    setMessage("sending");
     try {
       const result = await emailjs.sendForm(
         "service_da6szrm",
@@ -18,9 +26,16 @@ export default function Contact() {
         form.current,
         "JZTSy4PjC3ca5wKNt"
       );
-      console.log(result.text);
+      setMessage("success");
+      setTimeout(() => {
+        setMessage(false);
+        e.target.reset();
+      }, 1000);
     } catch (error) {
-      console.log(error);
+      setMessage("failed");
+      setTimeout(() => {
+        setMessage(false);
+      }, 1000);
     }
   }
 
@@ -41,7 +56,32 @@ export default function Contact() {
         Contact me directly via email to hire me or discuss your project or
         collaboration. Let's work together to build something great.
       </BodyText>
-      <div className=" lg:flex lg:justify-center md:px-20 md:pt-20 xl:ml-24 lg:gap-10 xl:gap-24 items-center">
+      <div className=" lg:flex lg:justify-center md:px-20 md:pt-20 xl:ml-24 lg:gap-10 xl:gap-24 items-center relative">
+        <div
+          className={`${
+            message ? "flex" : "hidden"
+          }  absolute z-10 w-full h-full justify-center items-center gap-4 bg-[rgba(0,0,0,0.7)]`}
+        >
+          <p className="text-slate-100 text-lg font-semibold uppercase tracking-wide">
+            {message}
+          </p>
+          <FontAwesomeIcon
+            icon={
+              message === "success"
+                ? faCircleCheck
+                : message === "failed"
+                ? faCircleXmark
+                : faSpinner
+            }
+            className={`text-slate-100 w-5 h-5 ${
+              message === "success"
+                ? "text-emerald-500 -order-1"
+                : message === "failed"
+                ? "text-red-500 -order-1"
+                : "animate-spin"
+            }`}
+          />
+        </div>
         <div className="px-7 rounded-xl bg-[#263238]  mt-14 md:mt-0 flex flex-col items-center py-11 text-slate-100 mx-auto lg:m-0 drop-shadow-md max-w-md lg:min-w-[28rem]">
           <header className="text-center">
             <FontAwesomeIcon
@@ -88,7 +128,7 @@ export default function Contact() {
               <button
                 type="submit"
                 value="Send"
-                className="border border-[#4bc190] bg-[rgba(75,193,144,0.2)] rounded-3xl w-fit mx-auto text-slate-300 px-8 py-2 uppercase tracking-widest mt-6 mb-2 md:text-[18px] hover:bg-[#4bc190] transition-colors duration-300 ease-in-out hover:text-slate-700 font-bold"
+                className="border border-[#4bc190] bg-[rgba(75,193,144,0.2)] rounded-3xl w-fit mx-auto text-slate-300 px-8 py-2 uppercase tracking-widest mt-6 mb-2 md:text-[18px] hover:bg-[#4bc190] transition-colors duration-300 ease-in-out hover:text-slate-700 font-bold active:animate-ping"
               >
                 send
               </button>
