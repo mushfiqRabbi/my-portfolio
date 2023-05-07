@@ -20,7 +20,7 @@ export default function Contact() {
     e.preventDefault();
     setMessage("sending");
     try {
-      const result = await emailjs.sendForm(
+      await emailjs.sendForm(
         "service_da6szrm",
         "template_eera7da",
         form.current,
@@ -30,12 +30,12 @@ export default function Contact() {
       setTimeout(() => {
         setMessage(false);
         e.target.reset();
-      }, 1000);
+      }, 2000);
     } catch (error) {
       setMessage("failed");
       setTimeout(() => {
         setMessage(false);
-      }, 1000);
+      }, 2000);
     }
   }
 
@@ -57,32 +57,34 @@ export default function Contact() {
         collaboration. Let's work together to build something great.
       </BodyText>
       <div className=" lg:flex lg:justify-center md:px-20 md:pt-20 xl:ml-24 lg:gap-10 xl:gap-24 items-center relative">
-        <div
-          className={`${
-            message ? "flex" : "hidden"
-          }  absolute z-10 w-full h-full justify-center items-center gap-4 bg-[rgba(0,0,0,0.7)]`}
-        >
-          <p className="text-slate-100 text-lg font-semibold uppercase tracking-wide">
-            {message}
-          </p>
-          <FontAwesomeIcon
-            icon={
-              message === "success"
-                ? faCircleCheck
-                : message === "failed"
-                ? faCircleXmark
-                : faSpinner
-            }
-            className={`text-slate-100 w-5 h-5 ${
-              message === "success"
-                ? "text-emerald-500 -order-1"
-                : message === "failed"
-                ? "text-red-500 -order-1"
-                : "animate-spin"
-            }`}
-          />
-        </div>
-        <div className="px-7 rounded-xl bg-[#263238]  mt-14 md:mt-0 flex flex-col items-center py-11 text-slate-100 mx-auto lg:m-0 drop-shadow-md max-w-md lg:min-w-[28rem]">
+        <div className="px-7 rounded-xl bg-[#263238] relative overflow-hidden  mt-14 md:mt-0 flex flex-col items-center py-11 text-slate-100 mx-auto lg:m-0 drop-shadow-md max-w-md lg:min-w-[28rem]">
+          <div
+            className={`${
+              message ? "flex" : "hidden"
+            }  absolute top-0 left-0 z-10 w-full h-full justify-center items-start bg-[rgba(38,50,56,0.96)]`}
+          >
+            <div className="flex items-center gap-4 mt-56">
+              <p className="text-slate-100 text-lg font-semibold uppercase tracking-wide">
+                {message}
+              </p>
+              <FontAwesomeIcon
+                icon={
+                  message === "success"
+                    ? faCircleCheck
+                    : message === "failed"
+                    ? faCircleXmark
+                    : faSpinner
+                }
+                className={`w-5 h-5 ${
+                  message === "success"
+                    ? "text-emerald-500 -order-1 animate-pulse"
+                    : message === "failed"
+                    ? "text-red-500 -order-1 animate-pulse"
+                    : "text-slate-100 animate-spin"
+                }`}
+              />
+            </div>
+          </div>
           <header className="text-center">
             <FontAwesomeIcon
               icon={faEnvelope}
