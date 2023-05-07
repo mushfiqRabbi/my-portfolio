@@ -7,8 +7,9 @@ const cards = [
     bodyText:
       "Committed to creating visually stunning and user-friendly interfaces that inspire and engage users.",
     langList: ["HTML", "CSS", "Javascript"],
-    techList: ["Next.js", "React.js", "Bootstrap", "Tailwind CSS", "Firebase"],
+    techList: ["React.js", "Next.js", "Bootstrap", "Tailwind CSS", "Firebase"],
     devTools: ["VS Code", "Terminal", "Git", "Github", "Vim"],
+    osList: ["Windows", "Linux"],
   },
   {
     icon: "backend",
@@ -16,8 +17,9 @@ const cards = [
     bodyText:
       "Committed to building robust and scalable server-side architectures that power exceptional user experiences.",
     langList: ["Javascript", "Node.js", "SQL", "NoSQL"],
-    techList: ["Express.js", "MySQL", "MongoDB", "Pug", "EJS"],
+    techList: ["Express.js", "Mongoose", "Pug", "EJS"],
     devTools: ["VS Code", "Terminal", "Git", "Github", "Vim"],
+    osList: ["Windows", "Linux"],
   },
 ];
 

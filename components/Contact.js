@@ -99,6 +99,7 @@ export default function Contact() {
           src="/email-me.svg"
           height={512}
           width={512}
+          alt="lady holding envelop illustration"
           className="hidden lg:block lg:min-w-0"
         />
       </div>

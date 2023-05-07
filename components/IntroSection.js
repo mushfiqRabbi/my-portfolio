@@ -19,7 +19,7 @@ export default function IntroSection() {
         >
           I am a full-stack web developer with a background in computer science.
           I have a passion for creating visually appealing and dynamic user
-          interfaces using React. With my knowledge of back-end development
+          interfaces using React.Also with my knowledge of back-end development
           using Node.js and Express.js, I can build robust server-side logic and
           APIs. I am constantly learning and keeping up-to-date with the latest
           trends in web development.

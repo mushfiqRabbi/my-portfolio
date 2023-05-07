@@ -10,7 +10,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function FooterSection() {
   return (
-    <footer className="p-0 lg:pt-8 bg-[#407BFF] text-white px-4" id="footer">
+    <footer className="pb-20 lg:pt-8 bg-[#407BFF] text-white px-4" id="footer">
       <Heading value={2} className="md:text-[32px]  text-slate-100">
         Let's Get Social
       </Heading>
@@ -18,8 +18,8 @@ export default function FooterSection() {
         value={1}
         className="md:text-xl md:px-28  lg:container lg:max-w-6xl mx-auto text-slate-200 mt-6"
       >
-        Find me on social media to discuss your project or hire me. Let's
-        connect and collaborate!
+        Find me on social media to discuss your project. Let's connect and
+        collaborate!
       </BodyText>
       <ul className="flex w-fit gap-3 mx-auto my-10  lg:container lg:max-w-5xl justify-center">
         <li className="group">
@@ -62,13 +62,26 @@ export default function FooterSection() {
         </span>
         mushfiqurRahman
       </p>
-      <ul className="text-center text-slate-300 text-xs mt-6">
-        <p>Resource credits</p>
-        <li>Resource credit one</li>
-        <li>Resource credit two</li>
-        <li>Resource credit three</li>
-        <li>Resource credit four</li>
-        <li>Resource credit five</li>
+      <p className="text-sm text-slate-200 text-center mt-6">
+        Resource Credits
+      </p>
+      <ul className="text-center text-slate-300 text-xs">
+        <li>
+          Vectors and icons by{" "}
+          <a href="https://www.svgrepo.com" target="_blank">
+            SVG Repo
+          </a>
+        </li>
+        <li>
+          <a href="https://storyset.com/work" target="_blank">
+            Work illustrations by Storyset
+          </a>
+        </li>
+        <li>
+          <a href="https://storyset.com/marketing" target="_blank">
+            Marketing illustrations by Storyset
+          </a>
+        </li>
       </ul>
     </footer>
   );

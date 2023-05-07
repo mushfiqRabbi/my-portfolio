@@ -4,7 +4,7 @@ import Heading from "./Heading";
 import BodyText from "./BodyText";
 
 export default function SkillCard({
-  data: { icon, headerText, bodyText, langList, techList, devTools },
+  data: { icon, headerText, bodyText, langList, techList, devTools, osList },
   last,
 }) {
   return (
@@ -34,6 +34,23 @@ export default function SkillCard({
           className="flex flex-wrap justify-center mt-2 gap-1 text-slate-700"
         >
           {langList.map((lang, index) => {
+            if (lang === "SQL") {
+              return (
+                <li key={index}>
+                  {lang}
+                  <sup className="text-[10px] align-super">MySQL</sup>
+                  {!(index + 1 === langList.length) ? "," : ""}
+                </li>
+              );
+            } else if (lang === "NoSQL") {
+              return (
+                <li key={index}>
+                  {lang}
+                  <sup className="text-[10px] align-super">MongoDB</sup>
+                  {!(index + 1 === langList.length) ? "," : ""}
+                </li>
+              );
+            }
             return (
               <li key={index}>{`${lang}${
                 !(index + 1 === langList.length) ? "," : ""
@@ -53,7 +70,7 @@ export default function SkillCard({
         </BodyText>
       </ul>
       <Heading value={3} className="mt-10 text-[#3362cc] font-semibold">
-        Dev Tools:
+        Dev tools
       </Heading>
       <ul className=" flex flex-wrap justify-center mt-2 gap-1">
         <BodyText
@@ -66,6 +83,16 @@ export default function SkillCard({
                 !(index + 1 === devTools.length) ? "," : ""
               }`}</li>
             );
+          })}
+        </BodyText>
+      </ul>
+      <Heading value={3} className="mt-10 text-[#3362cc] font-semibold">
+        Operating systems
+      </Heading>
+      <ul className=" flex flex-col mt-2 gap-1">
+        <BodyText value={4} className="md:text-[18px] text-slate-700">
+          {osList.map((os, index) => {
+            return <li key={index}>{`${os}`}</li>;
           })}
         </BodyText>
       </ul>
