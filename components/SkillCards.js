@@ -7,7 +7,7 @@ const cards = [
     bodyText:
       "Committed to creating visually stunning and user-friendly interfaces that inspire and engage users.",
     langList: ["HTML", "CSS", "Javascript"],
-    techList: ["React.js", "Next.js", "Bootstrap", "Tailwind CSS", "Firebase"],
+    techList: ["React.js", "Next.js", "Bootstrap", "Tailwind CSS"],
     devTools: ["VS Code", "Terminal", "Git", "Github", "Vim"],
     osList: ["Windows", "Linux"],
   },
