@@ -22,7 +22,7 @@ export default function WorksSection() {
       <WorkCards />
       <Heading
         value={3}
-        className="mx-auto w-fit mt-20  text-[#3362cc] font-semibold group cursor-pointer "
+        className="mx-auto w-fit mt-20  text-[#3362cc] font-semibold group cursor-pointer active:animate-ping"
       >
         <div className="border-b border-transparent group-hover:border-[#3362cc]">
           <a href="#">
