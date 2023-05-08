@@ -56,7 +56,7 @@ label:has(.checkbox:checked) + .menu_container .nav_list {
   .menu_container {
     border-radius: 0;
     transition: none;
-    border-bottom: 1px solid lightgray;
+    /* border-bottom: 1px solid lightgray; */
   }
   .nav_list {
     opacity: 1;
