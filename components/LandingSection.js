@@ -30,11 +30,12 @@ export default function LandingSection() {
       </figure>
       <figure>
         <Image
+          priority
           src="/landing.svg"
           height={512}
           width={512}
           alt="web developer illustration"
-          className="mx-auto md:w-4/5 lg:max-w-3xl"
+          className="w-auto h-auto mx-auto max-w-3xl"
         />
       </figure>
     </section>
