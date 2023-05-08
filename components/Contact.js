@@ -77,10 +77,10 @@ export default function Contact() {
                 }
                 className={`w-5 h-5 ${
                   message === "success"
-                    ? "text-emerald-500 -order-1 animate-pulse"
+                    ? "text-emerald-500 -order-1 animate-pulse  text-xl"
                     : message === "failed"
-                    ? "text-red-500 -order-1 animate-pulse"
-                    : "text-slate-100 animate-spin"
+                    ? "text-red-500 -order-1 animate-pulse text-xl"
+                    : "text-slate-100 animate-spin text-xl"
                 }`}
               />
             </div>
@@ -88,7 +88,7 @@ export default function Contact() {
           <header className="text-center">
             <FontAwesomeIcon
               icon={faEnvelope}
-              className="bg-[#4bc190] rounded-full h-8 w-8 p-4 text-slate-700"
+              className="bg-[#4bc190] rounded-full w-8 text-[2rem] p-4 text-slate-700"
             ></FontAwesomeIcon>
             <Heading value={2} className="mt-5 md:text-2xl text-slate-200">
               Send Email

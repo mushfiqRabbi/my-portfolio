@@ -11,7 +11,7 @@ export default function WorkCard({
       <div className="h-full w-full bg-[#263238] px-6 py-9 text-center text-slate-300 flex flex-col justify-evenly gap-4 absolute z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
         <p>{shortDescription}</p>
         <a
-          className="capitalize font-semibold border rounded-full border-[#4bc190] px-6 py-2 w-fit mx-auto flex items-center gap-2 bg-[rgba(75,193,144,0.2)]  hover:bg-[#4bc190] hover:text-slate-700 transition-colors ease-in-out duration-300 active:animate-ping"
+          className="capitalize font-semibold border rounded-full border-[#4bc190] px-6 py-2 w-fit mx-auto flex items-center gap-2 bg-[rgba(75,193,144,0.2)]  hover:bg-[#4bc190] hover:text-slate-700 transition-colors ease-in-out duration-300 active:animate-ping group"
           href={githubLink}
           target="_blank"
         >

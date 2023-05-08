@@ -1,9 +1,7 @@
-import Image from "next/image";
 import BodyText from "./BodyText";
 import Heading from "./Heading";
 import {
   faFacebookF,
-  faWhatsapp,
   faGithub,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
@@ -26,7 +24,7 @@ export default function FooterSection() {
           <a href="#">
             <FontAwesomeIcon
               icon={faFacebookF}
-              className="h-5 w-5 p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-100 group-hover:text-[#407BFF] transition-colors ease-in-out duration-300"
+              className="w-5 text-xl p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-100 group-hover:text-[#407BFF] transition-colors ease-in-out duration-300"
             />
           </a>
         </li>
@@ -34,7 +32,7 @@ export default function FooterSection() {
           <a href="#">
             <FontAwesomeIcon
               icon={faLinkedinIn}
-              className="h-5 w-5 p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-100 group-hover:text-[#407BFF] transition-colors ease-in-out duration-300"
+              className="w-5 text-xl p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-100 group-hover:text-[#407BFF] transition-colors ease-in-out duration-300"
             />
           </a>
         </li>
@@ -42,22 +40,22 @@ export default function FooterSection() {
           <a href="#">
             <FontAwesomeIcon
               icon={faGithub}
-              className="h-5 w-5 p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-100 group-hover:text-[#407BFF] transition-colors ease-in-out duration-300"
+              className="w-5 text-xl p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-100 group-hover:text-[#407BFF] transition-colors ease-in-out duration-300"
             />
           </a>
         </li>
       </ul>
       <p className="text-center tracking-wide mb-4 md:text-[18px] lg:container lg:max-w-5xl mx-auto text-slate-100 font-extralight">
-        Developed by me
-        <span className="text-2xl font-extralight align-middle pl-1">
+        Developed by
+        <span className="text-xl font-thin align-middle pl-1 pb-1 inline-block">
           &copy;
         </span>
-        mushfiqur_Rahman
+        mushfiqur_rahman
       </p>
-      <p className="text-sm text-slate-200 text-center mt-6">
+      <p className="text-sm font-thin text-slate-200 text-center mt-6">
         Resource Credits
       </p>
-      <ul className="text-center text-slate-300 text-xs">
+      <ul className="text-center text-slate-300 text-xs font-thin">
         <li>
           Vectors and icons by{" "}
           <a href="https://www.svgrepo.com" target="_blank">
