@@ -21,7 +21,7 @@ export default function FooterSection() {
       </BodyText>
       <ul className="flex w-fit gap-3 lg:gap-4 mx-auto my-10  lg:container lg:max-w-5xl justify-center">
         <li className="group active:animate-ping">
-          <a href="#">
+          <a href="https://www.facebook.com/pro.user.me" target="_blank">
             <FontAwesomeIcon
               icon={faFacebookF}
               className="w-5 text-xl p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-100 group-hover:text-[#407BFF] transition-colors ease-in-out duration-300"
@@ -29,7 +29,10 @@ export default function FooterSection() {
           </a>
         </li>
         <li className="group active:animate-ping">
-          <a href="#">
+          <a
+            href="https://www.linkedin.com/in/mushfiqur-rahman-me/"
+            target="_blank"
+          >
             <FontAwesomeIcon
               icon={faLinkedinIn}
               className="w-5 text-xl p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-100 group-hover:text-[#407BFF] transition-colors ease-in-out duration-300"
@@ -37,7 +40,7 @@ export default function FooterSection() {
           </a>
         </li>
         <li className="group active:animate-ping">
-          <a href="#">
+          <a href="https://github.com/mushfiqRabbi" target="_blank">
             <FontAwesomeIcon
               icon={faGithub}
               className="w-5 text-xl p-3 rounded-full border border-slate-300 inline-block group-hover:bg-slate-100 group-hover:text-[#407BFF] transition-colors ease-in-out duration-300"

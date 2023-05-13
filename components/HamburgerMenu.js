@@ -28,28 +28,28 @@ export default function HamburgerMenu() {
             className={`flex flex-col lg:flex-row gap-2 xl:pl-20 lg:py-5 lg:gap-5 ${styles.nav_list}`}
           >
             <li className="lg:ml-auto lg:border-b-2 lg:border-b-transparent lg:hover:border-b-slate-900 group cursor-pointer active:animate-ping">
-              <Link
+              <a
                 href="#skills"
                 className="lg:text-slate-500 lg:group-hover:text-slate-900 lg:text-lg lg:font-semibold  text-slate-200 group-hover:text-slate-50 text-xl md:text-2xl text-right block uppercase font-base tracking-wide lg:px-1  lg:relative  lg:top-1 lg:group-hover:top-0 lg:-z-10 lg:group-hover:z-0 lg:group-hover:-translate-x-0 lg:transition-[top] lg:ease-in-out group-hover:-translate-x-4 duration-300 ease-in-out"
               >
                 Skills
-              </Link>
+              </a>
             </li>
             <li className=" lg:border-b-2 lg:border-b-transparent lg:hover:border-b-slate-900 group cursor-pointer active:animate-ping">
-              <Link
+              <a
                 href="#works"
                 className="lg:text-slate-500 lg:group-hover:text-slate-900 lg:text-lg lg:font-semibold  text-slate-200 group-hover:text-slate-50 text-xl md:text-2xl text-right block uppercase font-base tracking-wide lg:px-1  lg:relative  lg:top-1 lg:group-hover:top-0 lg:-z-10 lg:group-hover:z-0 lg:group-hover:-translate-x-0 lg:transition-[top] lg:ease-in-out group-hover:-translate-x-4 duration-300 ease-in-out "
               >
                 Works
-              </Link>
+              </a>
             </li>
             <li className=" lg:border-b-2 lg:border-b-transparent lg:hover:border-b-slate-900 group cursor-pointer active:animate-ping">
-              <Link
+              <a
                 href="#contact"
                 className="lg:text-slate-500 lg:group-hover:text-slate-900 lg:text-lg lg:font-semibold  text-slate-200 group-hover:text-slate-50 text-xl md:text-2xl text-right block uppercase font-base tracking-wide lg:px-1  lg:relative  lg:top-1 lg:group-hover:top-0 lg:-z-10 lg:group-hover:z-0 lg:group-hover:-translate-x-0 lg:transition-[top] lg:ease-in-out group-hover:-translate-x-4 duration-300 ease-in-out "
               >
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>

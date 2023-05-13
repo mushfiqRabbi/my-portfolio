@@ -21,8 +21,14 @@ export default function WorkCard({
         </a>
       </div>
       <div className="w-full h-auto group-hover:scale-125 transition-transform duration-500 ease-in-out relative">
-        <div className="absolute h-full w-full bg-emerald-500 opacity-50"></div>
-        <Image src={imagePath} height="512" width="512" alt="work one image" />
+        <div className="absolute h-full w-full"></div>
+        <Image
+          src={imagePath}
+          height="512"
+          width="512"
+          alt="work one image"
+          className="aspect-[1.5]"
+        />
       </div>
     </div>
   );

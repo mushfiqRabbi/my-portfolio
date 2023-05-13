@@ -25,6 +25,21 @@ export default function IntroSection() {
           trends in web development.
         </BodyText>
       </article>
+      <div className="flex flex-col md:flex-row gap-5 w-fit mx-auto text-center mt-12 ">
+        <a
+          href="#contact"
+          className="border bg-[rgba(255,255,255,0.09)] rounded-full  text-slate-200 px-8 py-2 uppercase tracking-wide md:text-[18px] hover:bg-slate-200 transition-colors duration-300 ease-in-out hover:text-slate-800 font-bold active:animate-ping"
+        >
+          Hire Me
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1NCkD-bOv-V0zKKc3XNMty4wOhFB_sx5w/view?usp=share_link"
+          target="_blank"
+          className="border bg-[rgba(255,255,255,0.09)] rounded-full  text-slate-200 px-8 py-2 uppercase  tracking-wide md:text-[18px] hover:bg-slate-200 transition-colors duration-300 ease-in-out hover:text-slate-800 font-bold active:animate-ping"
+        >
+          Download CV
+        </a>
+      </div>
     </section>
   );
 }

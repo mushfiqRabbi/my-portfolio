@@ -25,7 +25,7 @@ export default function WorksSection() {
         className="mx-auto w-fit mt-20  text-[#3362cc] font-semibold group cursor-pointer active:animate-ping"
       >
         <div className="border-b border-transparent group-hover:border-[#3362cc]">
-          <a href="#">
+          <a href="https://github.com/mushfiqRabbi" target="_blank">
             <div className="flex items-center relative top-1 group-hover:-top-[2px] transition-[top] duration-100 ease-in-out -z-10 group-hover:z-10">
               <p className="px-2 ">View more on github</p>
               <FontAwesomeIcon
