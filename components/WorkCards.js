@@ -3,6 +3,18 @@ import WorkCard from "./WorkCard";
 const workData = [
   {
     shortDescription:
+      "eMart: Robust ecommerce website with sign-in, search, filtering, cart, checkout, and secure payment gateway.",
+    githubLink: "https://github.com/mushfiqRabbi/eMart-E-Commerce-Website",
+    imagePath: "/emart.png",
+  },
+  {
+    shortDescription:
+      "ubChats: Real-time chat app with audio and video calling, built using React, MongoDB, Socket.io, and WebRTC.",
+    githubLink: "https://github.com/mushfiqRabbi/ubChats-Online-chatting-and-audio-video-calling-website",
+  imagePath: "/ubchats.jpg",
+  },
+  {
+    shortDescription:
       "A portfolio project created with Next.js and Tailwind CSS, combining the power of a React framework and a utility-first CSS framework to build a modern and responsive portfolio website.",
     githubLink: "https://github.com/mushfiqRabbi/my-portfolio",
     imagePath: "/work-one.jpg",
@@ -36,6 +48,8 @@ export default function WorkCards() {
       <WorkCard workData={workData[1]} />
       <WorkCard workData={workData[2]} />
       <WorkCard workData={workData[3]} />
+      <WorkCard workData={workData[4]} />
+      <WorkCard workData={workData[5]} />
     </div>
   );
 }
