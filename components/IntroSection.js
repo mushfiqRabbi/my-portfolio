@@ -7,15 +7,15 @@ export default function IntroSection() {
       className="bg-[#407BFF] text-white px-6 lg:pt-28 pt-20"
       id="skills"
     >
-      <header className="lg:container mx-auto lg:max-w-6xl">
-        <Heading value={2} className=" md:text-[32px] text-slate-100">
+      <header className="mx-auto lg:container lg:max-w-6xl">
+        <Heading value={2} className="text-slate-100 md:text-[32px]">
           Hi, I'm Mushfiq.<pre className="md:hidden"></pre> Nice to meet you.
         </Heading>
       </header>
-      <article className="lg:container mx-auto lg:max-w-5xl">
+      <article className="mx-auto lg:container lg:max-w-5xl">
         <BodyText
           value={1}
-          className="md:px-28 md:text-xl text-slate-200 lg:mt-8 lg:text-xl mt-6"
+          className="mt-6 md:px-28 md:text-xl lg:mt-8 lg:text-xl text-slate-200"
         >
           I am a full-stack web developer with a background in computer science.
           I have a passion for creating visually appealing and dynamic user
@@ -25,7 +25,7 @@ export default function IntroSection() {
           trends in web development.
         </BodyText>
       </article>
-      <div className="flex flex-col md:flex-row gap-5 w-fit mx-auto text-center mt-12 ">
+      <div className="flex flex-col gap-5 mx-auto mt-12 text-center md:flex-row w-fit">
         <a
           href="#contact"
           className="border bg-[rgba(255,255,255,0.09)] rounded-full  text-slate-200 px-8 py-2 uppercase tracking-wide md:text-[18px] hover:bg-slate-200 transition-colors duration-300 ease-in-out hover:text-slate-800 font-bold active:animate-ping"
@@ -33,7 +33,7 @@ export default function IntroSection() {
           Hire Me
         </a>
         <a
-          href="https://drive.google.com/file/d/1NCkD-bOv-V0zKKc3XNMty4wOhFB_sx5w/view?usp=share_link"
+          href="https://drive.google.com/file/d/1eRMa8HpClLUxhuyPi-cF22TvOkJ-e8Dn/view?usp=drive_link"
           target="_blank"
           className="border bg-[rgba(255,255,255,0.09)] rounded-full  text-slate-200 px-8 py-2 uppercase  tracking-wide md:text-[18px] hover:bg-slate-200 transition-colors duration-300 ease-in-out hover:text-slate-800 font-bold active:animate-ping"
         >
